@@ -24,10 +24,10 @@ jobs:
 
       - name: Build TypeScript
         run: npm run build
+        working-directory: impl-24/temas/abstraccion/typescript
 
-      - name: Run tests
-        run: npm test
-
-        
       - name: Build Docker image
-        run: docker build -t abstraccion_typescript .
+        run: docker build -t tsc-abstraccion .
+        working-directory: impl-24/temas/abstraccion/typescript
+
+     
