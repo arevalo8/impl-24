@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: impl-24/temas/abstraccion/typescript
 
       - name: Build TypeScript
         run: npm run build
@@ -29,4 +30,4 @@ jobs:
 
         
       - name: Build Docker image
-        run: docker build -t nombre_de_la_imagen .
+        run: docker build -t abstraccion_typescript .
