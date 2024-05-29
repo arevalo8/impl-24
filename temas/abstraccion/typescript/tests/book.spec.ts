@@ -1,6 +1,6 @@
 // book.spec.ts
 
-import { Book } from './book';
+import { Book } from '../src/book';
 
 describe('Book', () => {
   let book: Book;
