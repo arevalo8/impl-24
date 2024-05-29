@@ -29,3 +29,4 @@ jobs:
       - name: Build Docker image
         run: docker build -t tsc-abstraccion .
         working-directory: temas/abstraccion/typescript
+
