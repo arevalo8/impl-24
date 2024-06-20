@@ -10,6 +10,9 @@ COPY package*.json ./
 # Instala las dependencias
 RUN npm install
 
+# Asegura que los binarios tengan los permisos adecuados
+RUN chmod +x /app/node_modules/.bin/tsc
+
 # Copia el resto de los archivos del proyecto
 COPY . .
 
