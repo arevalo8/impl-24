@@ -7,6 +7,6 @@ export class Book {
       public price: number
     ) {}
   
-    // Métodos adicionales si es necesario
+    
   }
   
