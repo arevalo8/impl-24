@@ -1,4 +1,4 @@
-// book.spec.ts
+// src/book.spec.ts
 
 import { Book } from '../src/book';
 
@@ -10,19 +10,19 @@ describe('Book', () => {
   });
 
   it('tiene un título', () => {
-    expect(book.title).toBe('El nombre del viento');
+    expect(book.getTitle()).toBe('El nombre del viento');
   });
 
   it('tiene un autor', () => {
-    expect(book.author).toBe('Patrick Rothfuss');
+    expect(book.getAuthor()).toBe('Patrick Rothfuss');
   });
 
   it('tiene un precio', () => {
-    expect(book.price).toBe(20.0);
+    expect(book.getPrice()).toBe(20.0);
   });
 
   it('puede cambiar su precio', () => {
-    book.price = 25.0;
-    expect(book.price).toBe(25.0);
+    book.setPrice(25.0);
+    expect(book.getPrice()).toBe(25.0);
   });
 });
