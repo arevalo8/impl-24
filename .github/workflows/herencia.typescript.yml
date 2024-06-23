@@ -33,6 +33,7 @@ jobs:
         working-directory: temas/abstraccion/typescript
 
   test:
+      if: github.ref == 'refs/heads/main' || 'refs/heads/abstraccion-dev' # Se ejecuta en ambas ramas
       runs-on: ubuntu-latest
     
       steps:
