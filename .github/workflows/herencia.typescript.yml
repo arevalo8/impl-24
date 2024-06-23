@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - abstraccion-dev
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main' # Solo se ejecuta en la rama main
     runs-on: ubuntu-latest
 
     steps:
